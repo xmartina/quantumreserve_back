@@ -815,7 +815,7 @@ class User extends BaseController
             $this->global['pageTitle'] = 'View User';
             $this->global['displayBreadcrumbs'] = false;
 
-            $this->loadViews("users/view/debit.php", $this->global, $data, NULL);
+            $this->loadViews("users/view/debit", $this->global, $data, NULL);
         }
     }
 	/*********** CREDIT / DEBIT USER METHOD *******************/
