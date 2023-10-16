@@ -728,7 +728,7 @@ class User extends BaseController
     }
 
 	/*********** CREDIT / DEBIT USER METHOD *******************/
-    function creditDebitClient($userId = NULL)
+    function creditClient($userId = NULL)
     {
         $module_id = 'clients';
         $module_action = 'view';
@@ -773,6 +773,52 @@ class User extends BaseController
             $this->loadViews("users/view/earnings", $this->global, $data, NULL);
         }
     }
+    function debitClient($userId = NULL)
+    {
+        $module_id = 'clients';
+        $module_action = 'view';
+        if($this->isAdmin($module_id, $module_action) == FALSE)
+        {
+            $this->loadThis();
+        }
+        else
+        {
+            if($userId == null)
+            {
+                redirect('clients');
+            }
+
+            $data['roles'] = $this->user_model->getUserRoles();
+            $data['userInfo'] = $this->user_model->getUserInfo($userId);
+            $data['accountInfo'] = $this->transactions_model->getActiveDeposits($userId);
+
+            //Earnings and account Info
+            $earnings = $this->transactions_model->getEarningsTotal($userId);
+            $withdrawals = $this->transactions_model->getWithdrawalsTotal($userId);
+            $availableFunds =  abs($earnings-$withdrawals);
+
+            $data['accountInfo'] = $availableFunds;
+            $data['activeDeposits'] = $this->transactions_model->getActiveDeposits($userId);
+            $data['earningsInfo'] = $earnings;
+            $data['withdrawals'] = $withdrawals;
+            //Pagination for transactions table
+            $searchText = $this->input->post('searchText' ,TRUE);
+            $data['searchText'] = $searchText;
+
+            $this->load->library('pagination');
+
+            $count = $this->transactions_model->earningsListingCount($searchText = '', $userId, date('Y-m-d H:i:s'));
+
+			$returns = $this->paginationCompress("clients/view-client-earnings/".$userId, $count, 10, 4);
+            $data['earnings'] = $this->transactions_model->earnings($searchText, $returns["page"], $returns["segment"], $userId, date('Y-m-d H:i:s'));
+
+            $this->global['pageTitle'] = 'View User';
+            $this->global['displayBreadcrumbs'] = false;
+
+            $this->loadViews("users/view/earnings", $this->global, $data, NULL);
+        }
+    }
+	/*********** CREDIT / DEBIT USER METHOD *******************/
 
     /**
      * This function is used to check whether email already exist or not

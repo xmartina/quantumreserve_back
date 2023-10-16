@@ -13,9 +13,15 @@
             <a class="nav-link <?= $this->uri->segment(2) == 'view-client-earnings' ? 'active' : '' ?>" href="<?=base_url('clients/view-client-earnings/'.$userInfo->userId)?>"><?php echo lang('earnings') ?></a>
         </li>
 		<li class="nav-item">
-			<a class="nav-link <?= $this->uri->segment(2) == 'view-client-earnings' ? 'active' : '' ?>" href="<?=base_url('clients/credit-debit-client/'.$userInfo->userId)?>">
+			<a class="nav-link <?= $this->uri->segment(2) == 'credit-client' ? 'active' : '' ?>" href="<?=base_url('clients/credit-client/'.$userInfo->userId)?>">
 <!--				--><?php //echo lang('earnings') ?>
-				Credit/Debit
+				Credit
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link <?= $this->uri->segment(2) == 'debit-client' ? 'active' : '' ?>" href="<?=base_url('clients/debit-client/'.$userInfo->userId)?>">
+<!--				--><?php //echo lang('earnings') ?>
+				Debit
 			</a>
 		</li>
     </ul>
