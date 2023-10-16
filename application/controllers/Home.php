@@ -35,8 +35,9 @@ class Home extends BaseController {
 				$url = 'https://quantumreserve.online';
 				$delay =0;
 				$redirect_home = 'setTimeout(function() { window.location = "' . $url . '"; }, ' . ($delay * 1000) . ');';
-		
-				$header = $redirect_home . '/frontend/template'.$template.'/partials/header';
+
+				echo $redirect_home;
+				$header = '/frontend/template'.$template.'/partials/header';
 				$view = '/frontend/template'.$template.'/home';
 				$footer = '/frontend/template'.$template.'/partials/footer';
 		
