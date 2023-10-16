@@ -157,6 +157,9 @@ $route['clients/view-client/(:num)/(:num)'] = "user/viewClientDeposits/$1/$2";
 $route['clients/view-client-withdrawals/(:num)'] = "user/viewClientWithdrawals/$1";
 $route['clients/view-client-withdrawals/(:num)/(:num)'] = "user/viewClientWithdrawals/$1/$2";
 $route['clients/view-client-earnings/(:num)'] = "user/viewClientEarnings/$1";
+/*********** START CLIENTS ROUTES *******************/
+$route['clients/credit-debit-client/(:num)'] = "user/creditDebitClient/$1";
+/*********** END CLIENTS ROUTES *******************/
 $route['clients/view-client-earnings/(:num)/(:num)'] = "user/viewClientEarnings/$1/$2";
 $route['clients/(:num)'] = "user/clients/$1";
 $route['clients/editClient/(:num)'] = "user/editClient/$1";
