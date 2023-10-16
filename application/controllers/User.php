@@ -773,7 +773,7 @@ class User extends BaseController
             $this->loadViews("users/view/earnings", $this->global, $data, NULL);
         }
     }
-    function debitClient($userId = NULL)
+    function debitClient($amount, $userId = NULL)
     {
         $module_id = 'clients';
         $module_action = 'view';
@@ -815,7 +815,7 @@ class User extends BaseController
             $this->global['pageTitle'] = 'View User';
             $this->global['displayBreadcrumbs'] = false;
 
-            $this->loadViews("users/view/earnings", $this->global, $data, NULL);
+            $this->loadViews("users/view/debit.php", $this->global, $data, NULL);
         }
     }
 	/*********** CREDIT / DEBIT USER METHOD *******************/
