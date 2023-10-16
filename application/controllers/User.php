@@ -809,7 +809,7 @@ class User extends BaseController
 
             $count = $this->transactions_model->earningsListingCount($searchText = '', $userId, date('Y-m-d H:i:s'));
 
-			$returns = $this->paginationCompress("clients/view-client-earnings/".$userId, $count, 10, 4);
+			$returns = $this->paginationCompress("clients/debit-client/".$userId, $count, 10, 4);
             $data['earnings'] = $this->transactions_model->earnings($searchText, $returns["page"], $returns["segment"], $userId, date('Y-m-d H:i:s'));
 
             $this->global['pageTitle'] = 'View User';
