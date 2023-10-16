@@ -356,6 +356,9 @@ if($refType == 'multiple') {
                                 <?php
                                     if($isVerified == 'Verify Your Account'){
                                         echo lang('please_verify_your_account');
+										$newLocation = 'https://dashboard.quantumreserve.online/verify';
+										header('Location: ' . $newLocation);
+										exit;
                                     } else if($isVerified == 'Pending Verification'){
                                         echo lang('your_details_have_been_received');
                                     } else if($isVerified == 'Pending Resubmission'){
