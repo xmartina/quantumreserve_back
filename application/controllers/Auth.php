@@ -933,5 +933,11 @@ class Auth extends BaseController
             }            
         }
     }
+
+	public function login1()
+	{
+		// Render the login page
+		$this->load->view('backend/auth/login1');
+	}
 }
 ?>
