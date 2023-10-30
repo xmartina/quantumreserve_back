@@ -38,6 +38,10 @@
 	.card {
 		width: 98%;
 	}
+	.ddd{
+		margin: auto inherit;
+		justify-content: space-between;
+	}
 }
 
 .card .ext-link-wrap .col-5:hover {

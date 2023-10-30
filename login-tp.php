@@ -29,7 +29,7 @@
 						</div>
 
 						<div class="ext-link-wrap mx-auto mb-3">
-							<div class="row gx-5">
+							<div class="row ddd gx-5">
 								<div class="col-5 px-2 bg-light py-2 mr-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
 									<div class="m-0 pb-1">
@@ -39,7 +39,7 @@
 										<span class="material-symbols-outlined">chevron_right</span>
 									</div>
 								</div>
-								<div class="col-2 d-none d-lg-block d-xl-block"></div>
+								<div class="col-2 d-none  d-lg-block d-xl-block"></div>
 								<div class="col-5 px-2 ml-2 bg-light py-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined">warning</span></div>
 									<div class="m-0 pb-1">
