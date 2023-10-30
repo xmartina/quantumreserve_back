@@ -47,6 +47,9 @@
 .login-info-2{
 	color: #0c0c3c;
 }
+.ext-link-wrap{
+	max-width: 93%;
+}
 .ext-link-wrap .col-6{
 	border-radius: 12px;
 	font-size: 14px;
