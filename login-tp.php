@@ -21,7 +21,7 @@
 						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img"> <div class=" d-flex align-items-center px-3 py-2 mx-2  logo-info">INVESTMENT</div>
 					</div>
 					<div class="card-body">
-						<div class="my-3">
+						<div class="mb-5">
 							<h3>
 								Welcome Prestigious User !
 							</h3>
