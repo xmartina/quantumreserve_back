@@ -13,9 +13,9 @@
 
 <div class="bd-wrapper px-4 py-4 py-sm-1 px-sm-1 ">
 	<div class="container ">
-		<div class="row ">
+		<div class="row my-5 my-sm-2">
 			<!--			form container-->
-			<div class="col-lg-6 bg-white">
+			<div class="col-lg-6 my-5 my-sm-2 bg-white">
 				<div class="card ">
 					<div class="card-header">
 						<h3>Login</h3>
