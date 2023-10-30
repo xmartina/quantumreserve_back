@@ -30,8 +30,14 @@
 /*Login form*/
 .card {
 	transition: 0.3s;
+	width: 400px;
 	margin: 20px auto;
 	border: transparent;
+}
+@media (max-width: 769px) {
+	.card {
+		width: 98%;
+	}
 }
 
 .card .ext-link-wrap .col-5:hover {
