@@ -68,7 +68,7 @@
 								<input type="checkbox" class="form-check-input" id="remember_me" name="remember_me">
 								<label for="remember_me" class="form-check-label">Remember me</label>
 							</div>
-							<button type="submit" class="btn w-75 btn-primary">Login</button>
+							<button type="submit" class="btn mb-4 w-75 btn-primary">Login</button>
 						</form>
 					</div>
 				</div>
