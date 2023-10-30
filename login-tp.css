@@ -36,6 +36,9 @@
 .login-info-2{
 	color: #0c0c3c;
 }
+.ext-link-wrap .col-6{
+	border-radius: 12px;
+}
 .card-body {
 	padding: 20px;
 }

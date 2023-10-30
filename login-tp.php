@@ -28,6 +28,14 @@
 							<p class="login-info-2">use the form below to log in to your account</p>
 						</div>
 
+						<div class="ext-link-wrap">
+							<div class="row">
+								<div class="col-6 mr-3 bg-light">
+									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark">Create Account</a>
+								</div>
+							</div>
+						</div>
+
 						<form action="/login" method="post">
 							<div class="mb-3">
 								<label for="username" class="form-label">Username</label>
