@@ -21,6 +21,13 @@
 						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img"> <div class=" d-flex align-items-center px-3 py-2 mx-2  logo-info">INVESTMENT</div>
 					</div>
 					<div class="card-body">
+						<div class="my-3">
+							<h2>
+								Welcome Prestigious User !
+							</h2>
+							<p>use the form below to log in to your account</p>
+						</div>
+
 						<form action="/login" method="post">
 							<div class="mb-3">
 								<label for="username" class="form-label">Username</label>
