@@ -30,7 +30,8 @@
 
 						<div class="ext-link-wrap">
 							<div class="row">
-								<div class="col-6 mr-3 bg-light py-2">
+								<div class="col-6 mr-3 bg-light py-2 d-flex align-items-center">
+									<div class="mr-2"><span class="material-symbols-outlined">account_circle</span></div>
 									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark">Create Account</a>
 								</div>
 							</div>
