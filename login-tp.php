@@ -75,7 +75,12 @@
 				</div>
 			</div>
 			<div class="col-lg-6 mx-0 px-0">
-				<img src="https://affirm.uicore.co/business-consultant/wp-content/uploads/sites/2/2021/09/business-consultant-side-2.webp" alt="" class="h-100 w-100">
+				<div class="login-head my-5 p-4">
+					<h3>we are investment</h3>
+					<div class="px-5">
+						<img src="https://affirm.uicore.co/business-consultant/wp-content/uploads/sites/2/2021/09/business-consultant-side-2.webp" alt="" class="h-auto w-100">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
