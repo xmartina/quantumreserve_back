@@ -659,30 +659,30 @@ class BaseController extends CI_Controller {
     }
 }
 
-
-//Login1 COntroller
-class Login1 extends CI_Controller {
-
-	public function index() {
-		$this->load->view('backend/auth/login1');
-	}
-
-	public function login() {
-		$username = $this->input->post('username');
-		$password = $this->input->post('password');
-
-		// Check the username and password against the database
-		$this->load->model('backend/users_model');
-		$user = $this->users_model->get_user_by_username($username);
-
-		if ($user && password_verify($password, $user['password'])) {
-			// The user is logged in
-			$this->session->set_userdata('logged_in', TRUE);
-			redirect('backend/dashboard');
-		} else {
-			// The user is not logged in
-			$this->session->set_flashdata('error', 'Invalid username or password.');
-			redirect('backend/auth/login1');
-		}
-	}
-}
+//
+////Login1 COntroller
+//class Login1 extends CI_Controller {
+//
+//	public function index() {
+//		$this->load->view('backend/auth/login1');
+//	}
+//
+//	public function login() {
+//		$username = $this->input->post('username');
+//		$password = $this->input->post('password');
+//
+//		// Check the username and password against the database
+//		$this->load->model('backend/users_model');
+//		$user = $this->users_model->get_user_by_username($username);
+//
+//		if ($user && password_verify($password, $user['password'])) {
+//			// The user is logged in
+//			$this->session->set_userdata('logged_in', TRUE);
+//			redirect('backend/dashboard');
+//		} else {
+//			// The user is not logged in
+//			$this->session->set_flashdata('error', 'Invalid username or password.');
+//			redirect('backend/auth/login1');
+//		}
+//	}
+//}
