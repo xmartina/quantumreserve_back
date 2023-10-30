@@ -78,7 +78,7 @@
 				<div class="login-head my-5 p-4 d-flex align-items-center flew-column justify-content-center text-center">
 					<div class="who-we">who we are</div>
 					<h3 class="">we are investment</h3>
-					<div class="px-5">
+					<div class="px-5 justify-self-end align-self-end">
 						<img src="https://affirm.uicore.co/business-consultant/wp-content/uploads/sites/2/2021/09/business-consultant-side-2.webp" alt="" class="h-auto w-100 rounded">
 					</div>
 				</div>
