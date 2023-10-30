@@ -66,7 +66,8 @@ $route['calculator'] = "home/calculator";
 /************* AUTH ROUTES *************/
 $route['signup'] = 'auth/signup';
 /*************Login Template AUTH ROUTES *************/
-$routes['backend/auth/login1'] = 'backend/Auth/login1';
+$routes['auth/login1'] = 'auth/login1';
+$routes['auth/login1/(:num)'] = 'auth/login1/$1';
 /*************Login Template AUTH ROUTES *************/
 $route['signup/(:any)'] = 'auth/signup/$1';
 $route['login'] = 'auth/login';
