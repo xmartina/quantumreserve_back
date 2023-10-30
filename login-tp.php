@@ -30,10 +30,12 @@
 
 						<div class="ext-link-wrap">
 							<div class="row">
-								<div class="col-6 bg-light py-2 d-flex align-items-center">
+								<div class="col-6 bg-light py-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
 									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Create Account</a>
-									<span class="material-symbols-outlined">chevron_right</span>
+									<div class="">
+										<span class="material-symbols-outlined">chevron_right</span>
+									</div>
 								</div>
 							</div>
 						</div>
