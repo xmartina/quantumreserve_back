@@ -22,9 +22,9 @@
 					</div>
 					<div class="card-body">
 						<div class="my-3">
-							<h2>
+							<h3>
 								Welcome Prestigious User !
-							</h2>
+							</h3>
 							<p>use the form below to log in to your account</p>
 						</div>
 
