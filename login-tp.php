@@ -15,7 +15,7 @@
 	<div class="container ">
 		<div class="row my-5 my-sm-2">
 			<!--			form container-->
-			<div class="col-lg-6 my-5 my-sm-2 bg-white">
+			<div class="col-lg-6 px-0 mx-0 my-5 my-sm-2 bg-white">
 				<div class="card ">
 					<div class="card-header bg-white d-flex align-items-end">
 						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img"> <div class=" d-flex align-items-center px-3 py-2 mx-2  logo-info">INVESTMENT</div>
@@ -74,8 +74,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<img src="https://affirm.uicore.co/business-consultant/wp-content/uploads/sites/2/2021/09/business-consultant-side-2.webp" alt="" class="h-100 ">
+			<div class="col-lg-6 mx-0 px-0">
+				<img src="https://affirm.uicore.co/business-consultant/wp-content/uploads/sites/2/2021/09/business-consultant-side-2.webp" alt="" class="h-100 w-100">
 			</div>
 		</div>
 	</div>
