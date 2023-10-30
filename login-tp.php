@@ -12,11 +12,11 @@
 <body>
 
 <div class="bd-wrapper px-4 px-sm-1 ">
-	<div class="container">
-		<div class="row">
+	<div class="container min-vh-100 h-100">
+		<div class="row min-vh-100 h-100">
 			<!--			form container-->
-			<div class="col-lg-6 bg-white">
-				<div class="card">
+			<div class="col-lg-6 bg-white min-vh-100 h-100">
+				<div class="card min-vh-100 h-100">
 					<div class="card-header">
 						<h3>Login</h3>
 					</div>
