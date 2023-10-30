@@ -74,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 bg-dark dd mx-0 px-0">
+			<div class="col-lg-6 d-sm-none bg-dark dd mx-0 px-0">
 				<div class="login-head my-5 p-4 d-flex align-items-center flew-column justify-content-center text-center">
 					<div class="who-we">who we are</div>
 					<h3 class="">we are investment</h3>
