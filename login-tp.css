@@ -9,6 +9,8 @@
 	background-color: #dcecf1;
 	font-weight: bold;
 	font-size: 12px;
+	height: 21px;
+	border-radius: 12px;
 }
 /*Login form*/
 .card {
