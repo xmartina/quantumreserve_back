@@ -28,8 +28,17 @@
 							<p class="login-info-2">use the form below to log in to your account</p>
 						</div>
 
-						<div class="ext-link-wrap">
+						<div class="ext-link-wrap mb-3">
 							<div class="row">
+								<div class="col-6 bg-light py-2 d-flex justify-content-between align-items-center">
+									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
+									<div class="m-0 pb-1">
+										<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Create Account</a>
+									</div>
+									<div class="m-0 p-0">
+										<span class="material-symbols-outlined">chevron_right</span>
+									</div>
+								</div>
 								<div class="col-6 bg-light py-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
 									<div class="m-0 pb-1">
