@@ -87,9 +87,23 @@
 								<label class="error" id="phone"></label>
 							</div>
 							<div class="mb-3">
-								<label for="password" class="form-label">Password</label>
+								<div class="row">
+									<div class="col-lg-6">
+										<label for="password" class="form-label">Password</label>
+										<input type="password" class="form-control" id="password" name="password"
+											   placeholder="Enter your password">
+									</div>
+									<div class="col-lg-6">
+										<label for="password" class="form-label">Confirm Password</label>
+										<input type="password" class="form-control" id="password" name="password"
+											   placeholder="Enter your password">
+									</div>
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Referral Code</label>
 								<input type="password" class="form-control" id="password" name="password"
-									   placeholder="Enter your password">
+									   placeholder="Referral Code">
 							</div>
 							<div class="mb-3">
 								<input type="checkbox" class="form-check-input" id="remember_me" name="remember_me">
