@@ -69,6 +69,6 @@
 }
 
 .ext-link-wrap .btn{
-	background-color: #0ba8ef;
-	color: #0c0c3c;
+	background-color: #0ba8ef!important;
+	color: #0c0c3c!important;
 }
