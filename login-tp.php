@@ -69,6 +69,7 @@
 								<label for="remember_me" class="form-check-label">Remember me</label>
 							</div>
 							<button type="submit" class="btn mb-4 w-75 btn-primary">Login</button>
+							<div class="py-3"></div>
 						</form>
 					</div>
 				</div>
