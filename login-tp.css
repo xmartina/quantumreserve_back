@@ -41,6 +41,9 @@
 	font-size: 14px;
 	font-weight: bold;
 }
+.ext-link-wrap a{
+	text-decoration: none;
+}
 .card-body {
 	padding: 20px;
 }
