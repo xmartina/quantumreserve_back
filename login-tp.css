@@ -73,7 +73,7 @@
 	color: #0c0c3c!important;
 }
 .login-head{
-
+	flex-direction: column;
 }
 .who-we{
 	font-size: 12px;
