@@ -4,6 +4,9 @@
 	padding-top: 50px;
 	padding-bottom: 140px;
 }
+.logo-img{
+	max-width: 190px;
+}
 .logo-info{
 	color: #0b43c6;
 	background-color: #dcecf1;
@@ -11,6 +14,7 @@
 	font-size: 12px;
 	height: 28px;
 	border-radius: 17px;
+	font-family: "Source Code Pro", sans-serif;
 }
 /*Login form*/
 .card {
