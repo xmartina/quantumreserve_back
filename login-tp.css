@@ -4,7 +4,10 @@
 	padding-top: 50px;
 	padding-bottom: 140px;
 }
-
+.logo-info{
+	color: #0b43c6;
+	background-color: #dcecf1;
+}
 /*Login form*/
 .card {
 	transition: 0.3s;
