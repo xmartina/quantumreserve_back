@@ -38,6 +38,8 @@
 }
 .ext-link-wrap .col-6{
 	border-radius: 12px;
+	font-size: 9px;
+	font-weight: bold;
 }
 .card-body {
 	padding: 20px;
