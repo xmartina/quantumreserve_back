@@ -23,10 +23,11 @@
 					</div>
 					<div class="card-body">
 						<div class="mb-5">
+							<div class="signup-dd text-center px-3 py-2">Signup Page</div>
 							<h3 class="font-weight-bolder">
 								Welcome Prestigious User !
 							</h3>
-							<p class="login-info-2">use the form below to log in to your account</p>
+							<p class="login-info-2">use the form below to create an account</p>
 						</div>
 
 						<div class="ext-link-wrap mx-auto mb-3">
