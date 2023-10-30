@@ -15,8 +15,8 @@
 	<div class="container ">
 		<div class="row ">
 			<!--			form container-->
-			<div class="col-lg-6 bg-white min-vh-100 h-100">
-				<div class="card min-vh-100 h-100">
+			<div class="col-lg-6 bg-white">
+				<div class="card ">
 					<div class="card-header">
 						<h3>Login</h3>
 					</div>
