@@ -80,10 +80,10 @@
 									   placeholder="Enter Email">
 							</div>
 							<div class="mb-3">
-								<label for="email" class="form-label">Email</label>
+								<label for="email" class="form-label">Phone Number</label>
 								<input type="tel" class="form-control" id="phoneit" aria-describedby="phone"
-									   name="password"
-									   placeholder="Enter Email">
+									   name="phone"
+									   placeholder="Enter Phone">
 								<label class="error" id="phone"></label>
 							</div>
 							<div class="mb-3">
