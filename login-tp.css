@@ -50,10 +50,11 @@
 .ext-link-wrap{
 	max-width: 98%;
 }
-.ext-link-wrap .col-6{
+.ext-link-wrap .col-5{
 	border-radius: 12px;
 	font-size: 14px;
 	font-weight: bold;
+	padding: 7px 2px;
 }
 .ext-link-wrap a{
 	text-decoration: none;
