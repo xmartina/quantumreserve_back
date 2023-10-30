@@ -5,7 +5,7 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Login Template</title>
+	<title>Signup Template</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="login-tp.css">
 </head>
@@ -105,11 +105,7 @@
 								<input type="password" class="form-control" id="password" name="password"
 									   placeholder="Referral Code">
 							</div>
-							<div class="mb-3">
-								<input type="checkbox" class="form-check-input" id="remember_me" name="remember_me">
-								<label for="remember_me" class="form-check-label">Remember me</label>
-							</div>
-							<button type="submit" class="btn mb-4 w-75 btn-primary">Login</button>
+							<button type="submit" class="btn mb-4 w-75 btn-primary">Signup</button>
 							<div class="py-3"></div>
 						</form>
 					</div>
