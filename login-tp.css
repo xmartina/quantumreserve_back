@@ -40,7 +40,7 @@
 	}
 	.ddd{
 		margin: auto inherit;
-		justify-content: stretch;
+		justify-content: space-evenly;
 	}
 }
 
