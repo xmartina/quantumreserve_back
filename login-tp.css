@@ -8,6 +8,7 @@
 	transition: 0.3s;
 	width: 400px;
 	margin: 20px auto;
+	border: transparent;
 }
 
 .card:hover {
