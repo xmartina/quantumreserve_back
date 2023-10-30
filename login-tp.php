@@ -74,7 +74,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6"></div>
+			<div class="col-lg-6">
+				<img src="https://affirm.uicore.co/business-consultant/wp-content/uploads/sites/2/2021/09/business-consultant-side-2.webp" alt="" class="h-100 ">
+			</div>
 		</div>
 	</div>
 </div>
