@@ -39,7 +39,8 @@
 										<span class="material-symbols-outlined">chevron_right</span>
 									</div>
 								</div>
-								<div class="col-5 off-set-2 px-2 ml-2 bg-light py-2 d-flex justify-content-between align-items-center">
+								<div class="col-2"></div>
+								<div class="col-5 px-2 ml-2 bg-light py-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
 									<div class="m-0 pb-1">
 										<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Create Account</a>
