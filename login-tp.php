@@ -32,7 +32,7 @@
 							<div class="row">
 								<div class="col-6 bg-light py-2 d-flex align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined">account_circle</span></div>
-									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark">Create Account</a> <div class="justify-content-end"><span class="material-symbols-outlined">chevron_right</span></div>
+									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark">Create Account</a> <div class="justify-content-end d-flex"><span class="material-symbols-outlined">chevron_right</span></div>
 								</div>
 							</div>
 						</div>
