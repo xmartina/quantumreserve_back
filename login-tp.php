@@ -30,7 +30,7 @@
 
 						<div class="ext-link-wrap">
 							<div class="row">
-								<div class="col-6 mr-3 bg-light">
+								<div class="col-6 mr-3 bg-light py-3">
 									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark">Create Account</a>
 								</div>
 							</div>
