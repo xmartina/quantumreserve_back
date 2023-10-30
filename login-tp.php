@@ -25,7 +25,7 @@
 							<h3 class="font-weight-bolder">
 								Welcome Prestigious User !
 							</h3>
-							<p class="text-info">use the form below to log in to your account</p>
+							<p class="login-info-2">use the form below to log in to your account</p>
 						</div>
 
 						<form action="/login" method="post">

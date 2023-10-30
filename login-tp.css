@@ -33,7 +33,9 @@
 	border-bottom: transparent;
 	margin: 25px 1px;
 }
-
+.login-info-2{
+	color: #0c0c3c;
+}
 .card-body {
 	padding: 20px;
 }
