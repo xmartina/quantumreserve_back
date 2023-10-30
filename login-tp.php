@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="bd-wrapper px-4 px-sm-1 ">
+<div class="bd-wrapper px-4 py-4 py-sm-1 px-sm-1 ">
 	<div class="container min-vh-100 h-100">
 		<div class="row min-vh-100 h-100">
 			<!--			form container-->
