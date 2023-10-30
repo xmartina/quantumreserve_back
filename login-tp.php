@@ -22,10 +22,10 @@
 					</div>
 					<div class="card-body">
 						<div class="mb-5">
-							<h3>
+							<h3 class="font-weight-bolder">
 								Welcome Prestigious User !
 							</h3>
-							<p>use the form below to log in to your account</p>
+							<p class="text-info">use the form below to log in to your account</p>
 						</div>
 
 						<form action="/login" method="post">
