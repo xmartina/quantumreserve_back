@@ -18,7 +18,7 @@
 			<div class="col-lg-6 my-5 my-sm-2 bg-white">
 				<div class="card ">
 					<div class="card-header bg-white">
-						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img w-50 w-sm-75">
+						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img w-25">
 					</div>
 					<div class="card-body">
 						<form action="/login" method="post">
