@@ -32,10 +32,12 @@
 							<div class="row">
 								<div class="col-6 bg-light py-2 d-flex align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
-									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Create Account</a> <div class="justify-content-end d-flex text-right"><span class="material-symbols-outlined">chevron_right</span></div>
+									<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Create Account</a>
+									<span class="material-symbols-outlined">chevron_right</span>
 								</div>
 							</div>
 						</div>
+
 
 						<form action="/login" method="post">
 							<div class="mb-3">
