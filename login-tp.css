@@ -82,5 +82,9 @@
 	padding: 3px 9px;
 	background-color: #0c68fb;
 	color: #fff;
+	margin-bottom: 21px;
 	font-weight: bold;
+}
+.login-head h3{
+	margin-bottom: 19px;
 }
