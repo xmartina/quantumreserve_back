@@ -23,7 +23,7 @@
 					</div>
 					<div class="card-body">
 						<div class="mb-5">
-							<div class="signup-dd mb-3 px-3 py-2">Signup Page</div>
+							<div class="signup-dd mb-3 d-flex justify-content-center px-3 py-2">Signup Page</div>
 							<h3 class="font-weight-bolder">
 								Welcome Prestigious User !
 							</h3>
