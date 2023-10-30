@@ -17,7 +17,7 @@
 			<!--			form container-->
 			<div class="col-lg-6 my-5 my-sm-2 bg-white">
 				<div class="card ">
-					<div class="card-header bg-white">
+					<div class="card-header bg-white d-flex justify-content-center">
 						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img w-25">
 					</div>
 					<div class="card-body">
