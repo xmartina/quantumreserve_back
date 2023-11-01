@@ -967,7 +967,7 @@
 	border: transparent;
 }
 @media (max-width: 769px) {
-	.card {
+	.bd-wrapper .card {
 		width: 98%;
 	}
 	.ddd{
