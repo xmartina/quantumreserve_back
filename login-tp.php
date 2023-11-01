@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Login Template</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="login-tp.css">
-</head>
-<body>
-
 <div class="bd-wrapper px-4 px-sm-1 h-100">
 	<div class="container ">
 		<div class="row my-5 my-sm-2">
@@ -18,7 +5,7 @@
 			<div class="col-lg-6 px-0 mx-0 my-5 my-sm-2 bg-white">
 				<div class="card">
 					<div class="card-header bg-white d-flex align-items-end">
-						<img src="https://dashboard.quantumreserve.online/uploads/21.png" alt="" class="logo-img"> <div class=" d-flex align-items-center px-3 py-2 mx-2  logo-info">INVESTMENT</div>
+						<img src="<?php echo $this->security->xss_clean($this->logoWhite) ?>" alt="" class="logo-img"> <div class=" d-flex align-items-center px-3 py-2 mx-2  logo-info">INVESTMENT</div>
 					</div>
 					<div class="card-body">
 						<div class="mb-5">
@@ -33,7 +20,9 @@
 								<div class="col-5 px-2 bg-light py-2 mr-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined m-0 p-0">account_circle</span></div>
 									<div class="m-0 pb-1">
-										<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Create Account</a>
+
+										<a href="<?php echo base_url("signup") ?>" class="text-dark m-0 p-0"><?php echo lang("create_account") ?>
+										</a>
 									</div>
 									<div class="m-0 p-0">
 										<span class="material-symbols-outlined">chevron_right</span>
@@ -43,7 +32,8 @@
 								<div class="col-5 px-2 ml-2 bg-light py-2 d-flex justify-content-between align-items-center">
 									<div class="mr-3"><span class="material-symbols-outlined">warning</span></div>
 									<div class="m-0 pb-1">
-										<a href="https://dashboard.quantumreserve.online/signup" class="text-dark m-0 p-0">Recov Account</a>
+
+										<a href="<?php echo base_url('forgotPassword'); ?>" class="text-dark m-0 p-0"><?php echo lang("cant_access_your_account") ?></a>
 									</div>
 									<div class="m-0 p-0">
 										<span class="material-symbols-outlined">chevron_right</span>
@@ -52,25 +42,83 @@
 							</div>
 						</div>
 
+						<?php
+						$this->load->helper('form');
+						$error = $this->session->flashdata('error');
+						if($error)
+						{ ?>
+							<div class="alert border-0 alert-primary bg-gradient m-b-30 alert-dismissible fade show border-radius-none"
+								 role="alert">
+								<?php echo $this->session->flashdata('error'); ?>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+						<?php } ?>
+						<?php
+						$success = $this->session->flashdata('success');
+						if($success)
+						{
+							?>
+							<div class="alert border-0 alert-primary bg-gradient m-b-30 alert-dismissible fade show border-radius-none"
+								 role="alert">
+								<?php echo $this->session->flashdata('success'); ?>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+						<?php } ?>
+						<?php echo validation_errors('<div class="alert border-0 alert-primary bg-gradient m-b-30 alert-dismissible fade show border-radius-none" role="alert">', ' <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>'); ?>
+						<h2 id="login-title" class="f-20"><?php echo lang("enter_email_and_password_below") ?></h2>
 
-						<form action="/login" method="post">
-							<div class="mb-3">
-								<label for="username" class="form-label">Username</label>
-								<input type="text" class="form-control" id="username" name="username"
-									   placeholder="Enter your username">
+						<?php echo form_open(base_url( 'login' ), array( 'id' => 'loginForm' ));?>
+						<div class="email-pass">
+							<div class="errorClass">
+								<label class="error" id="overallError"></label>
 							</div>
 							<div class="mb-3">
-								<label for="password" class="form-label">Password</label>
-								<input type="password" class="form-control" id="password" name="password"
-									   placeholder="Enter your password">
+								<label for="username" class="form-label"><?php echo lang("email_address") ?></label>
+								<input type="email" class="form-control" aria-describedby="email-1" name="email" id="email-1"
+									   placeholder="<?php echo lang("email") ?>" value="<?=set_value('email')?>">
 							</div>
 							<div class="mb-3">
-								<input type="checkbox" class="form-check-input" id="remember_me" name="remember_me">
-								<label for="remember_me" class="form-check-label">Remember me</label>
+								<label for="password" class="form-label"><?php echo lang("password") ?></label>
+								<input type="password" class="form-control" name="password" id="password-1"
+									   placeholder="<?php echo lang("password") ?>" value="<?=set_value('password')?>">
 							</div>
-							<button type="submit" class="btn mb-4 w-75 btn-primary">Login</button>
+							<div class="mb-3">
+								<input type="checkbox" name="stay_logged_in" class="form-check-input" id="checkbox-1" value="agree">
+								<label for="remember_me" class="form-check-label"><?php echo lang("keep_me_logged_in") ?></label>
+							</div>
+
+							<!-- /form group -->
+							<?php if($companyInfo['google_recaptcha'] != 0) {?>
+								<?php if($companyInfo['recaptcha_version'] == 'v2') {?>
+									<input type="hidden" name="g-recaptcha-response">
+									<div class="g-recaptcha" style="margin-bottom: 15px;" data-sitekey="<?php echo $recaptchaInfo->public_key; ?>"></div>
+								<?php } else if($companyInfo['recaptcha_version'] == 'v3') {?>
+									<input type="hidden" class="g-recaptcha" name="recaptcha_response" id="recaptchaResponse">
+								<?php }?>
+							<?php }?>
+						</div>
+						<div class="hide" id="google-auth">
+							<!-- Form Group -->
+							<div class="form-group">
+								<div id="divOuter" class="<?php echo $companyInfo['two_factor_auth'] == 'Authy' ? 'authydivOuter' : ''; ?>">
+									<div id="divInner">
+										<input id="partitioned" class="<?php echo $companyInfo['two_factor_auth'] == 'Authy' ? 'authypartitioned' : ''; ?>" name="token" type="text" maxlength="<?php echo $companyInfo['two_factor_auth'] == 'Authy' ? '7' : '6'; ?>" />
+										<label class="error google-auth-err"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<button type="button" id="confirm-user-pass" class="btn btn-info text-uppercase mb-4 w-75" data-loading-text="<?php echo lang('processing_data') ?>" data-title="<?php echo lang("login") ?>"><?php echo lang("login") ?></button>
+						<button type="button" id="authenticate" class="hide btn btn-info text-uppercase mb-4 w-75"><?php echo lang("login") ?></button>
+
 							<div class="py-3"></div>
-						</form>
+						<?php echo form_close();?>
 					</div>
 				</div>
 			</div>
@@ -87,6 +135,4 @@
 	</div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<script src="<?php echo base_url('/assets/dist/js/login.js') ?>"></script>
