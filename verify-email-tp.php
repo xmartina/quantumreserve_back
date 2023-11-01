@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Signup Template</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="login-tp.css">
-</head>
-<body>
-
 <div class="bd-wrapper px-4 px-sm-1 h-100">
 	<div class="container ">
 		<div class="row my-5 my-sm-2">
@@ -23,77 +10,22 @@
 					</div>
 					<div class="card-body">
 						<div class="mb-5">
-							<div class="signup-dd mb-3 d-flex justify-content-center px-3 py-2">Signup Page</div>
+							<div class="signup-dd mb-3 d-flex justify-content-center px-3 py-2">Email Verification Page</div>
 							<h3 class="font-weight-bolder">
-								Welcome Prestigious User !
+								Verify Your Email Address
 							</h3>
-							<p class="login-info-2">use the form below to create an account</p>
-						</div>
-
-						<div class="ext-link-wrap mx-auto mb-3">
-							<div class="row ddd gx-5">
-								<div
-									class="col-7 px-2 bg-light py-2 mr-2 d-flex justify-content-between align-items-center">
-									<div class="mr-3"><span
-											class="material-symbols-outlined m-0 p-0">account_circle</span></div>
-									<div class="m-0 pb-1">
-										<a href="https://dashboard.quantumreserve.online/signup"
-										   class="text-dark m-0 p-0">Login</a>
-									</div>
-									<div class="m-0 p-0">
-										<span class="material-symbols-outlined">chevron_right</span>
-									</div>
-								</div>
-							</div>
+							<p class="login-info-2">We've sent you a verification code to <?=$email?>. Please enter the code below.</p>
 						</div>
 
 
-						<form action="/login" method="post">
+						<?php echo form_open("", array('class' => 'mt-3', 'id' => 'verifyForm'));?>
 							<div class="mb-3">
-								<div class="row">
-									<div class="col-lg-6">
-										<label for="username" class="form-label">First Name</label>
-										<input type="text" class="form-control" id="username" name="username"
-											   placeholder="Enter your username">
-									</div>
-									<div class="col-lg-6">
-										<label for="username" class="form-label">Last Name</label>
-										<input type="text" class="form-control" id="username" name="username"
-											   placeholder="Enter your username">
-									</div>
-								</div>
+								<label for="Verification_code" class="form-label">Verification Code</label>
+								<input type="text" class="form-control" name="code" placeholder="Verification Code" value="<?=set_value('email')?>">
+								<label class="error" id="code"></label>
 							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Email</label>
-								<input type="email" class="form-control" id="email" name="password"
-									   placeholder="Enter Email">
-							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Phone Number</label>
-								<input type="tel" class="form-control" id="phoneit" aria-describedby="phone"
-									   name="phone"
-									   placeholder="Enter Phone">
-							</div>
-							<div class="mb-3">
-								<div class="row">
-									<div class="col-lg-6">
-										<label for="password" class="form-label">Password</label>
-										<input type="password" class="form-control" id="password" name="password"
-											   placeholder="Enter your password">
-									</div>
-									<div class="col-lg-6">
-										<label for="password" class="form-label">Confirm Password</label>
-										<input type="password" class="form-control" id="password" name="password"
-											   placeholder="Enter your password">
-									</div>
-								</div>
-							</div>
-							<div class="mb-3">
-								<label for="password" class="form-label">Referral Code</label>
-								<input type="password" class="form-control" id="password" name="password"
-									   placeholder="Referral Code">
-							</div>
-							<button type="submit" class="btn mb-4 w-75 btn-primary">Signup</button>
+						<p class="mb-3">Didn't receive the code? <a href="javascript:void(0)" id="resendverification" data-url="<?=base_url('resend-verification-email/'.$this->uri->segment(2))?>">Resend email</a></p>
+							<button type="submit" id="submit" class="btn mb-4 w-75 btn-primary">Verify Account</button>
 							<div class="py-3"></div>
 						</form>
 					</div>
@@ -115,6 +47,4 @@
 	</div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<script src="<?php echo base_url('/assets/dist/js/functions.js') ?>"></script>
