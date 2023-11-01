@@ -112,8 +112,8 @@
 						</div>
 
 
-						<button type="button" id="confirm-user-pass" class="btn btn-info text-uppercase mb-4 w-75" data-loading-text="<?php echo lang('processing_data') ?>" data-title="<?php echo lang("login") ?>"><?php echo lang("login") ?></button>
-						<button type="button" id="authenticate" class="hide btn btn-info text-uppercase mb-4 w-75"><?php echo lang("login") ?></button>
+						<button type="button" id="confirm-user-pass" class="btn btn-primary text-uppercase mb-4 w-75" data-loading-text="<?php echo lang('processing_data') ?>" data-title="<?php echo lang("login") ?>"><?php echo lang("login") ?></button>
+						<button type="button" id="authenticate" class="hide btn btn-primary text-uppercase mb-4 w-75"><?php echo lang("login") ?></button>
 
 						<div class="py-3"></div>
 						<?php echo form_close();?>
