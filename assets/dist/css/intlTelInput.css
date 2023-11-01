@@ -957,7 +957,8 @@
 	font-family: "Source Code Pro", sans-serif;
 }
 /*Login form*/
-.card {
+.bd-wrapper .card {
+	box-shadow: none!important;
 	transition: 0.3s;
 	width: 400px;
 	margin: 20px auto;
