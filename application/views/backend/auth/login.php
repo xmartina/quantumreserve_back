@@ -33,7 +33,7 @@
 									<div class="mr-3"><span class="material-symbols-outlined">warning</span></div>
 									<div class="m-0 pb-1">
 
-										<a href="<?php echo base_url('forgotPassword'); ?>" class="text-dark m-0 p-0"><?php echo lang("cant_access_your_account") ?></a>
+										<a href="<?php echo base_url('forgotPassword'); ?>" class="text-dark m-0 p-0">Recov Account</a>
 									</div>
 									<div class="m-0 p-0">
 										<span class="material-symbols-outlined">chevron_right</span>
@@ -69,7 +69,6 @@
 							</div>
 						<?php } ?>
 						<?php echo validation_errors('<div class="alert border-0 alert-primary bg-gradient m-b-30 alert-dismissible fade show border-radius-none" role="alert">', ' <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>'); ?>
-						<h2 id="login-title" class="f-20"><?php echo lang("enter_email_and_password_below") ?></h2>
 
 						<?php echo form_open(base_url( 'login' ), array( 'id' => 'loginForm' ));?>
 						<div class="email-pass">
